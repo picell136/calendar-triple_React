@@ -35,7 +35,7 @@ const HomePage = () => {
 
     return <>   
                 <div className={styles['main-container']}>
-                    <div className='container'>
+                    <div className={styles.container}>
                         <h1>Тройной календарь</h1>
                         <div className={styles.navigation}>
                             <span className={styles["icon-arrow"]} onClick={prevMonth}>
