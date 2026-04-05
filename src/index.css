@@ -56,7 +56,7 @@ h1 {
 }
 
 .calendar tbody {
-  box-shadow: 4px 4px 19px 10px rgba(34, 60, 80, 0.3);
+  box-shadow: 4px 4px 19px 10px rgba(34, 60, 80, 0.5);
 }
 
 
@@ -78,7 +78,7 @@ h1 {
 
 .calendar td {
   padding: 5px;
-  background: linear-gradient(to right bottom, rgb(248, 248, 248, 0.6), rgb(153, 153, 153, 0.6));
+  background: linear-gradient(to right bottom, rgb(248, 248, 248, 0.4), rgb(153, 153, 153, 0.4));
 }
 
 .border-none {
