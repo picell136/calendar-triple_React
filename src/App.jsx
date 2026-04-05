@@ -2,10 +2,10 @@ import React from 'react';
 import { Routes, Route } from 'react-router'
 
 import HomePage from './components/HomePage'
-import Prev_Calendar from './components/Prev_Calendar'
-import Current_Calendar from './components/Current_Calendar'
-import Next_Calendar from './components/Next_Calendar'
-import NotFound404 from './components/NotFound404'
+import Prev_Calendar from './components/prevCalendar/Prev_Calendar'
+import Current_Calendar from './components/currentCalendar/Current_Calendar'
+import Next_Calendar from './components/nextCalendar/Next_Calendar'
+import NotFound404 from './components/notFound404/NotFound404'
 
 import { createBrowserRouter } from 'react-router-dom'
 
