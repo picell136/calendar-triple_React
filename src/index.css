@@ -37,6 +37,7 @@ h1 {
 
 .icon-arrow:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 
 .calendars {
