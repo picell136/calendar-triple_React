@@ -1,0 +1,33 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  width: 60vw;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.icon-arrow:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.calendars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

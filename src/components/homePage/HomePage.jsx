@@ -5,6 +5,8 @@ import Prev_Calendar from './Prev_Calendar'
 import Current_Calendar from './Current_Calendar'
 import Next_Calendar from './Next_Calendar'
 
+import styles from "../../styles/HomePage.module.css"; 
+
 import rightArrow from '../images/arrow-right-2.svg'
 import leftArrow from '../images/arrow-left-2.svg'
 
@@ -32,20 +34,18 @@ const HomePage = () => {
     }
 
     return <>   
-                <div className='main-container'>
+                <div className={styles['main-container']}>
                     <div className='container'>
                         <h1>Тройной календарь</h1>
-                        <div className='navigation'>
-                            {/* <button onClick={prevMonth}>←</button>
-                            <button onClick={nextMonth}>→</button> */}
-                            <span className={["icon-arrow"]} onClick={prevMonth}>
+                        <div className={styles.navigation}>
+                            <span className={styles["icon-arrow"]} onClick={prevMonth}>
                                 <img src={leftArrow} alt="Arrow circle icon" width="50" height="50"/>
                             </span>
-                            <span className={["icon-arrow"]} onClick={nextMonth}>
+                            <span className={styles["icon-arrow"]} onClick={nextMonth}>
                                 <img src={rightArrow} alt="Arrow circle icon" width="50" height="50"/>
                             </span>
                         </div>
-                        <div className='calendars'>
+                        <div className={styles.calendars}>
                             <Prev_Calendar month={month} year={year}/>
                             <Current_Calendar month={month} year={year}/>
                             <Next_Calendar month={month} year={year}/>

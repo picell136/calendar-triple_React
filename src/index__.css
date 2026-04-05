@@ -1,0 +1,113 @@
+body {
+  font-family: 'Century Gothic Regular';
+  background-image: linear-gradient(0deg, #0772ba,#a4c755);
+  background-attachment: fixed;  /* Градиент не растёт, а привязан к экрану */
+}
+
+h1 {
+  color:rgb(51, 51, 51);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+  width: 60vw;
+  text-align: center;
+}
+
+.container img {
+  align-self: center;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.icon-arrow:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.calendars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.text {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.calendar thead {
+  padding-bottom: 10px;
+}
+
+.calendar tbody {
+  box-shadow: 4px 4px 19px 10px rgba(34, 60, 80, 0.5);
+}
+
+
+/* Сделать пространство между thead и tbody */
+.calendar thead:after { 
+    content:"@";
+    display: block;
+    line-height: 5px;
+    text-indent: -99999px;
+}
+
+
+.calendar th {
+  padding: 5px;
+  background: linear-gradient(to right bottom, rgb(248, 248, 248, 0.6), rgb(153, 153, 153, 0.6));
+  border-radius: 50%;
+  padding-bottom: 5px;
+}
+
+.calendar td {
+  padding: 5px;
+  background: linear-gradient(to right bottom, rgb(248, 248, 248, 0.4), rgb(153, 153, 153, 0.4));
+}
+
+.border-none {
+  border-collapse: collapse;
+  padding: 15px;
+  font-size: 25px;
+}
+
+.border-none th {
+  font-size: 17px;
+}
+
+.border-none td {
+  border: 0px solid rgb(100, 100, 100);
+}
+
+.border-none tr:first-child td {
+  border-top: none;
+}
+
+.border-none tr:last-child td {
+  border-bottom: none;
+}
+
+.border-none tr td:first-child {
+  border-left: none;
+}
+
+.border-none tr td:last-child {
+  border-right: none;
+}
+

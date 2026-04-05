@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from "../../styles/currentCalendar.module.css"; 
+
 const Current_Calendar = ( {month, year} ) => {
 
   let currentYear = year;
@@ -102,9 +104,9 @@ const Current_Calendar = ( {month, year} ) => {
   }
 
   return <div>
-            <div className="calendar">
-              <div className='text'>{currentYear} {getMonthNames(currentMonth)}</div>
-              <table className='border-none'>
+            <div className={styles.calendar}>
+              <div className={styles.text}>{currentYear} {getMonthNames(currentMonth)}</div>
+              <table className={styles["border-none"]}>
                 <thead>
                   <tr>
                     <th>пн</th>

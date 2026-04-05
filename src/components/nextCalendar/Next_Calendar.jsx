@@ -1,5 +1,7 @@
 import React from 'react'
 
+import styles from "../../styles/nextCalendar.module.css"
+
 const Next_Calendar = ({ year, month }) => {
 
   let nextMonth;
@@ -108,9 +110,9 @@ const Next_Calendar = ({ year, month }) => {
   }
 
   return <div>
-            <div className="calendar">
-              <div className='text'>{year} {getMonthNames(nextMonth)}</div>
-              <table className='border-none'>
+            <div className={styles.calendar}>
+              <div className={styles.text}>{year} {getMonthNames(nextMonth)}</div>
+              <table className={styles["border-none"]}>
                 <thead>
                   <tr>
                     <th>пн</th>
