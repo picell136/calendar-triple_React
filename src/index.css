@@ -50,11 +50,32 @@ h1 {
   font-size: 20px;
 }
 
-.calendar table {
+.calendar thead {
+  padding-bottom: 10px;
+}
+
+.calendar tbody {
   box-shadow: 4px 4px 19px 10px rgba(34, 60, 80, 0.5);
 }
 
-.calendar th, td {
+
+/* Сделать пространство между thead и tbody */
+.calendar thead:after { 
+    content:"@";
+    display: block;
+    line-height: 5px;
+    text-indent: -99999px;
+}
+
+
+.calendar th {
+  padding: 5px;
+  background: linear-gradient(to right bottom, rgb(248, 248, 248, 0.6), rgb(153, 153, 153, 0.6));
+  border-radius: 50%;
+  padding-bottom: 5px;
+}
+
+.calendar td {
   padding: 5px;
   background: linear-gradient(to right bottom, rgb(248, 248, 248, 0.6), rgb(153, 153, 153, 0.6));
 }
@@ -66,7 +87,6 @@ h1 {
 }
 
 .border-none th {
-  border: 2px solid black;
   font-size: 17px;
 }
 
