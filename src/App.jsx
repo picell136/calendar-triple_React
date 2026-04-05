@@ -1,7 +1,7 @@
 import React from 'react';
 import { Routes, Route } from 'react-router'
 
-import HomePage from './components/HomePage'
+import HomePage from './components/homePage/HomePage'
 import Prev_Calendar from './components/prevCalendar/Prev_Calendar'
 import Current_Calendar from './components/currentCalendar/Current_Calendar'
 import Next_Calendar from './components/nextCalendar/Next_Calendar'

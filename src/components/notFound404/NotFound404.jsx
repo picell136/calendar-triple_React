@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router'
 
 import styles from "../../styles/HomePage.module.css"
-import img from '../images/404.png'
+import img from '../../images/404.png'
 
 const NotFound = () => {
   return (

@@ -1,14 +1,14 @@
 import React from 'react'
 import { useState } from 'react'
 
-import Prev_Calendar from './Prev_Calendar'
-import Current_Calendar from './Current_Calendar'
-import Next_Calendar from './Next_Calendar'
+import Prev_Calendar from '../prevCalendar/Prev_Calendar'
+import Current_Calendar from '../currentCalendar/Current_Calendar'
+import Next_Calendar from '../nextCalendar/Next_Calendar'
 
 import styles from "../../styles/HomePage.module.css"; 
 
-import rightArrow from '../images/arrow-right-2.svg'
-import leftArrow from '../images/arrow-left-2.svg'
+import rightArrow from '../../images/arrow-right-2.svg'
+import leftArrow from '../../images/arrow-left-2.svg'
 
 const HomePage = () => {
     const [date] = useState(new Date())
